@@ -25,25 +25,22 @@ This project addresses the challenge of distinguishing between real and fake new
 
 To run this project, you'll need Python and Jupyter Notebook installed. Follow these steps:
 
-1. Clone the repository or download the IPython notebook.
-
-2. Create a virtual environment (optional but recommended):
+1. Ensure you have Jupyter Notebook installed. If not, you can install it using:
    ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   pip install jupyter
    ```
 
-3. Install the required packages:
-   ```
-   pip install pandas numpy scikit-learn spacy jupyter
-   ```
-
-4. Download the spaCy model:
-   ```
-   python -m spacy download en_core_web_lg
+2. Install the required packages. You can do this directly in a code cell within the notebook:
+   ```python
+   !pip install pandas numpy scikit-learn spacy
    ```
 
-5. Ensure you have the "Fake_Real_Data.csv" file in the same directory as the notebook.
+3. Download the spaCy model. Run this in a code cell:
+   ```python
+   !python -m spacy download en_core_web_lg
+   ```
+
+4. Ensure you have the "Fake_Real_Data.csv" file in the same directory as the notebook.
 
 ## 🚀 Running the Notebook
 
